@@ -1,5 +1,7 @@
+# DebugMessageR
+Your friend in debugging R workflows and RShiny apps
 
-please use the following command to install the package
+please use the following instructions to install the package
 
 ```R
 library(devtools)
