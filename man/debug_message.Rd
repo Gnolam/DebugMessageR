@@ -44,4 +44,3 @@ my_fun <- function(some_tex_input){
 }
 }
 }
-

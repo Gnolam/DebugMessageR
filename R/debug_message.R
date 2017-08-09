@@ -15,7 +15,7 @@
     intent.depth="---------------------"
   )
   attach(debug_message_env)
-  message("DebugMessageR activated")
+  base::message("DebugMessageR activated")
 }
 
 
@@ -32,8 +32,23 @@
 #' @export
 #'
 #' @examples
-debug_message_reset_level <- function(NEW.DEBUG.LEVEL){
+debug_message_set_warning_threshold <- function(NEW.DEBUG.LEVEL){
   DEBUG.LEVEL <<- NEW.DEBUG.LEVEL
+}
+
+
+
+#' Title Reset intent level
+#'
+#' @param new_level
+#' @description (optional): Drops level of intent to 0
+#'
+#' @return
+#' @export
+#'
+#' @examples
+debug_message_reset_intent <- function(new_level = 0){
+  debug.intent <<- new_level
 }
 
 
